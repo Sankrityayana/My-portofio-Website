@@ -50,10 +50,16 @@ const Navbar = () => {
                         Services
                     </NavLink>
                     <NavLink
-                        to="/blog"
+                        to="/certificates"
                         className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
                     >
-                        Blog
+                        Certificates
+                    </NavLink>
+                    <NavLink
+                        to="/journey"
+                        className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+                    >
+                        Journey
                     </NavLink>
                     <NavLink
                         to="/experience"
@@ -83,7 +89,8 @@ const Navbar = () => {
                     <NavLink to="/" onClick={closeMenu} className={styles.navLink}>Home</NavLink>
                     <NavLink to="/projects" onClick={closeMenu} className={styles.navLink}>Projects</NavLink>
                     <NavLink to="/services" onClick={closeMenu} className={styles.navLink}>Services</NavLink>
-                    <NavLink to="/blog" onClick={closeMenu} className={styles.navLink}>Blog</NavLink>
+                    <NavLink to="/certificates" onClick={closeMenu} className={styles.navLink}>Certificates</NavLink>
+                    <NavLink to="/journey" onClick={closeMenu} className={styles.navLink}>Journey</NavLink>
                     <NavLink to="/experience" onClick={closeMenu} className={styles.navLink}>Experience</NavLink>
                     <NavLink to="/contact" onClick={closeMenu} className={styles.navLink}>Contact</NavLink>
                     <NavLink to="/resume" onClick={closeMenu} className={styles.navLink}>Resume</NavLink>

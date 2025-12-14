@@ -3,6 +3,7 @@ import Button from '../../../components/UI/Button';
 import SectionTitle from '../../../components/UI/SectionTitle';
 import Card from '../../../components/UI/Card';
 import { fadeIn } from '../../../utils/animations';
+import { FaUserCircle } from 'react-icons/fa';
 
 const AboutSection = () => {
     return (
@@ -34,9 +35,12 @@ const AboutSection = () => {
                             justifyContent: 'center',
                             color: 'white',
                             fontSize: '2rem',
-                            fontWeight: 'bold'
+                            fontWeight: 'bold',
+                            flexDirection: 'column',
+                            gap: '1rem'
                         }}>
-                            Profile Img
+                            <FaUserCircle size={100} />
+                            <span style={{ fontSize: '1.2rem', opacity: 0.9 }}>Suraj Shanbhag</span>
                         </div>
                         {/* Replace with actual image: <img src="/images/profile.jpg" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
                     </Card>
@@ -74,7 +78,7 @@ const AboutSection = () => {
                     </div>
 
                     <div style={{ marginTop: '2rem' }}>
-                        <Button variant="accent" href="/resume.pdf">
+                        <Button variant="accent" href="/resume.pdf" target="_blank" download>
                             Download Resume
                         </Button>
                     </div>

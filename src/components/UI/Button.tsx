@@ -9,6 +9,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     href?: string;
     to?: string;
     className?: string;
+    download?: boolean | string;
+    target?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -39,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
 
     if (href) {
         return (
-            <a href={href} className={classes} target="_blank" rel="noopener noreferrer">
+            <a href={href} className={classes} target="_blank" rel="noopener noreferrer" {...(props as any)}>
                 {children}
             </a>
         );
