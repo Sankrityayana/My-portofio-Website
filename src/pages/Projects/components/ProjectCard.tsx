@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Card from '../../../components/UI/Card';
 import Button from '../../../components/UI/Button';
 import styles from './ProjectCard.module.css';
@@ -19,7 +20,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {/* Fallback if no image url is valid css */}
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>{project.title}</h3>
+                <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }} className={styles.cardTitle}>{project.title}</h3>
+                </Link>
                 <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
                     {project.category}
                 </span>

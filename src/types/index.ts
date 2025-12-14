@@ -4,9 +4,13 @@ export interface Project {
     description: string;
     image: string;
     tags: string[];
-    category: 'Web' | 'Mobile' | 'Design' | 'Other';
-    demoUrl?: string;
-    githubUrl?: string;
+    category: string; // Changed from union to string to allow flexibility
+    demoUrl: string;
+    githubUrl: string;
+    featured?: boolean;
+    fullDescription?: string;
+    challenges?: string;
+    solutions?: string;
 }
 
 export interface Skill {

@@ -1,0 +1,135 @@
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.carouselContent {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonialCard {
+    text-align: center;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoteIcon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    opacity: 0.3;
+    margin-bottom: 1.5rem;
+}
+
+.text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.role {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.navButton {
+    background: var(--bg-secondary);
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.navButton:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.activeDot {
+    background: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 1rem;
+    }
+
+    .carouselContainer {
+        position: relative;
+    }
+
+    .navButton {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        background: rgba(var(--bg-secondary), 0.8);
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .navButton:first-child {
+        left: -1rem;
+    }
+
+    .navButton:last-child {
+        right: -1rem;
+    }
+}

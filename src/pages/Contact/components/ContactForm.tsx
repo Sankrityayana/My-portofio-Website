@@ -1,45 +1,47 @@
-import { useState, type FormEvent } from 'react';
+import { useState, useRef, type FormEvent } from 'react';
+import emailjs from '@emailjs/browser';
 import Button from '../../../components/UI/Button';
 import styles from '../Contact.module.css';
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
+    const form = useRef<HTMLFormElement>(null);
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e: FormEvent) => {
+    const sendEmail = (e: FormEvent) => {
         e.preventDefault();
         setStatus('submitting');
 
-        // Simulate form submission
-        setTimeout(() => {
-            setStatus('success');
-            setFormData({ name: '', email: '', subject: '', message: '' });
-            setTimeout(() => setStatus('idle'), 3000);
-        }, 1500);
+        // REPLACE THESE WITH YOUR ACTUAL EMAILJS SERVICE ID, TEMPLATE ID, AND PUBLIC KEY
+        const SERVICE_ID = 'service_id_placeholder';
+        const TEMPLATE_ID = 'template_id_placeholder';
+        const PUBLIC_KEY = 'public_key_placeholder';
+
+        if (form.current) {
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+                .then((result) => {
+                    console.log(result.text);
+                    setStatus('success');
+                    if (form.current) form.current.reset();
+                    setTimeout(() => setStatus('idle'), 5000);
+                }, (error) => {
+                    console.log(error.text);
+                    setStatus('error');
+                    setTimeout(() => setStatus('idle'), 5000);
+                });
+        }
     };
 
     return (
         <div className={styles.formContainer}>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Send me a message</h3>
 
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={sendEmail}>
                 <div className={styles.inputGroup}>
-                    <label htmlFor="name" className={styles.label}>Name</label>
+                    <label htmlFor="user_name" className={styles.label}>Name</label>
                     <input
                         type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+                        id="user_name"
+                        name="user_name"
                         required
                         className={styles.input}
                         placeholder="Your Name"
@@ -47,13 +49,11 @@ const ContactForm = () => {
                 </div>
 
                 <div className={styles.inputGroup}>
-                    <label htmlFor="email" className={styles.label}>Email</label>
+                    <label htmlFor="user_email" className={styles.label}>Email</label>
                     <input
                         type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                        id="user_email"
+                        name="user_email"
                         required
                         className={styles.input}
                         placeholder="your.email@example.com"
@@ -66,8 +66,6 @@ const ContactForm = () => {
                         type="text"
                         id="subject"
                         name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
                         required
                         className={styles.input}
                         placeholder="Project Inquiry"
@@ -79,8 +77,6 @@ const ContactForm = () => {
                     <textarea
                         id="message"
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
                         required
                         className={styles.textarea}
                         placeholder="Tell me about your project..."
@@ -92,7 +88,7 @@ const ContactForm = () => {
                     fullWidth
                     disabled={status === 'submitting' || status === 'success'}
                 >
-                    {status === 'submitting' ? 'Sending...' : status === 'success' ? 'Message Sent!' : 'Send Message'}
+                    {status === 'submitting' ? 'Sending...' : status === 'success' ? 'Message Sent!' : status === 'error' ? 'Failed, Try Again' : 'Send Message'}
                 </Button>
             </form>
         </div>

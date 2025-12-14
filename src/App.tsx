@@ -11,6 +11,7 @@ import Blog from './pages/Blog/Blog';
 import FAQ from './pages/FAQ/FAQ';
 import Resume from './pages/Resume/Resume';
 import NotFound from './pages/NotFound/NotFound';
+import ProjectDetails from './pages/ProjectDetails/ProjectDetails';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<FAQ />} />
@@ -41,7 +43,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </div>
+    </div >
   );
 }
 
