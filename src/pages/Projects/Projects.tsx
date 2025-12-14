@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEO from '../../components/SEO';
 import SectionTitle from '../../components/UI/SectionTitle';
 import ProjectCard from './components/ProjectCard';
 import Button from '../../components/UI/Button';
@@ -85,6 +86,10 @@ const Projects = () => {
             <SectionTitle
                 title="My Projects"
                 subtitle="A collection of my recent work"
+            />
+            <SEO
+                title="Projects"
+                description="Showcase of my web development projects, featuring React, TypeScript, and modern UI/UX design."
             />
 
             <div className={styles.filterContainer}>

@@ -1,5 +1,6 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import SEO from '../../components/SEO';
 import SectionTitle from '../../components/UI/SectionTitle';
 import ContactForm from './components/ContactForm';
 import styles from './Contact.module.css';
@@ -11,6 +12,10 @@ const Contact = () => {
             <SectionTitle
                 title="Get In Touch"
                 subtitle="Have a project in mind? Let's talk!"
+            />
+            <SEO
+                title="Contact"
+                description="Contact Suraj Laxman Shanbhag for web development projects, freelance opportunities, or collaboration."
             />
 
             <div className={styles.grid}>

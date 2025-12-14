@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../../components/SEO';
 import Button from '../../components/UI/Button';
 import SectionTitle from '../../components/UI/SectionTitle';
 import Card from '../../components/UI/Card';
@@ -59,6 +60,10 @@ const Blog = () => {
             <SectionTitle
                 title="Blog & Insights"
                 subtitle="Sharing my thoughts on technology"
+            />
+            <SEO
+                title="Blog"
+                description="Insights and articles about web development, React, TypeScript, and software architecture."
             />
 
             <motion.div

@@ -29,7 +29,7 @@ const HeroSection = () => {
                     animate="show"
                     className={styles.title}
                 >
-                    Your <span className={styles.highlight}>Name</span>
+                    Suraj Laxman <span className={styles.highlight}>Shanbhag</span>
                 </motion.h1>
 
                 <motion.h2

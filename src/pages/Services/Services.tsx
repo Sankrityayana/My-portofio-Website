@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../../components/SEO';
 import SectionTitle from '../../components/UI/SectionTitle';
 import Card from '../../components/UI/Card';
 import { fadeIn, staggerContainer } from '../../utils/animations';
@@ -45,6 +46,10 @@ const Services = () => {
             <SectionTitle
                 title="My Services"
                 subtitle="What I can do for you"
+            />
+            <SEO
+                title="Services"
+                description="Web development services including React apps, UI/UX design, SEO optimization, and mobile development."
             />
 
             <motion.div

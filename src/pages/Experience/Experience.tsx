@@ -1,4 +1,5 @@
 import SectionTitle from '../../components/UI/SectionTitle';
+import SEO from '../../components/SEO';
 import Timeline from './components/Timeline';
 import Stats from './components/Stats';
 import Testimonials from '../../components/UI/Testimonials';
@@ -9,6 +10,10 @@ const Experience = () => {
             <SectionTitle
                 title="Experience & Education"
                 subtitle="My professional journey so far"
+            />
+            <SEO
+                title="Experience"
+                description="My professional experience and education journey in software development."
             />
 
             <Timeline />

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../../components/SEO';
 import Button from '../../components/UI/Button';
 import { textVariant, fadeIn } from '../../utils/animations';
 
@@ -13,6 +14,10 @@ const NotFound = () => {
             textAlign: 'center',
             padding: '1.5rem'
         }}>
+            <SEO
+                title="404 Not Found"
+                description="The page you are looking for does not exist."
+            />
             <motion.h1
                 variants={textVariant(0.1)}
                 initial="hidden"

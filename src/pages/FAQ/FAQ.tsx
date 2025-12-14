@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEO from '../../components/SEO';
 import SectionTitle from '../../components/UI/SectionTitle';
 import Card from '../../components/UI/Card';
 import { FaPlus, FaMinus } from 'react-icons/fa';
@@ -40,6 +41,10 @@ const FAQ = () => {
             <SectionTitle
                 title="Frequently Asked Questions"
                 subtitle="Common questions about working with me"
+            />
+            <SEO
+                title="FAQ"
+                description="Answers to common questions about my web development services, pricing, and process."
             />
 
             <motion.div

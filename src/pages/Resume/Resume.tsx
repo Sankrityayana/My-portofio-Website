@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../../components/SEO';
 import SectionTitle from '../../components/UI/SectionTitle';
 import Button from '../../components/UI/Button';
 import Card from '../../components/UI/Card';
@@ -11,6 +12,10 @@ const Resume = () => {
             <SectionTitle
                 title="Resume"
                 subtitle="My professional qualification"
+            />
+            <SEO
+                title="Resume"
+                description="Professional resume of Suraj Laxman Shanbhag - Experience, Education, and Skills."
             />
 
             <motion.div
@@ -37,7 +42,7 @@ const Resume = () => {
 
                 <Card glass style={{ padding: '3rem' }}>
                     <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '2rem', marginBottom: '2rem' }}>
-                        <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Your Name</h2>
+                        <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Suraj Laxman Shanbhag</h2>
                         <p style={{ color: 'var(--primary-500)', fontSize: '1.25rem', fontWeight: '500' }}>Full Stack Developer</p>
                         <p style={{ color: 'var(--text-secondary)', marginTop: '1rem', lineHeight: '1.6' }}>
                             Passionate developer with 5+ years of experience in building scalable web applications.
