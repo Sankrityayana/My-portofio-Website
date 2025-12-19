@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Services from './pages/Services/Services';
 import Certificates from './pages/Certificates/Certificates';
 import Journey from './pages/Journey/Journey';
+import NSSJourney from './pages/NSSJourney/NSSJourney';
 import FAQ from './pages/FAQ/FAQ';
 import Resume from './pages/Resume/Resume';
 import NotFound from './pages/NotFound/NotFound';
@@ -35,6 +36,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/certificates" element={<Certificates />} />
           <Route path="/journey" element={<Journey />} />
+          <Route path="/nss-journey" element={<NSSJourney />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />

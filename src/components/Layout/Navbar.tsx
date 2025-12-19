@@ -62,6 +62,12 @@ const Navbar = () => {
                         Journey
                     </NavLink>
                     <NavLink
+                        to="/nss-journey"
+                        className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+                    >
+                        NSS Journey
+                    </NavLink>
+                    <NavLink
                         to="/experience"
                         className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
                     >
@@ -91,6 +97,7 @@ const Navbar = () => {
                     <NavLink to="/services" onClick={closeMenu} className={styles.navLink}>Services</NavLink>
                     <NavLink to="/certificates" onClick={closeMenu} className={styles.navLink}>Certificates</NavLink>
                     <NavLink to="/journey" onClick={closeMenu} className={styles.navLink}>Journey</NavLink>
+                    <NavLink to="/nss-journey" onClick={closeMenu} className={styles.navLink}>NSS Journey</NavLink>
                     <NavLink to="/experience" onClick={closeMenu} className={styles.navLink}>Experience</NavLink>
                     <NavLink to="/contact" onClick={closeMenu} className={styles.navLink}>Contact</NavLink>
                     <NavLink to="/resume" onClick={closeMenu} className={styles.navLink}>Resume</NavLink>
