@@ -38,7 +38,7 @@ const HeroSection = () => {
                     animate="show"
                     className={styles.subtitle}
                 >
-                    Full Stack Developer & UI Designer
+                    Aspiring Software Engineer
                 </motion.h2>
 
                 <motion.p
@@ -47,8 +47,8 @@ const HeroSection = () => {
                     animate="show"
                     className={styles.description}
                 >
-                    I create stunning digital experiences with modern technologies.
-                    Specializing in React, TypeScript, and creative interfaces that leave a lasting impression.
+                    Strong foundations in programming, data structures, and problem-solving with expertise in Java, Python, and web technologies. 
+                    Hands-on experience in AI, machine learning, and full-stack development.
                 </motion.p>
 
                 <motion.div

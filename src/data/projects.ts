@@ -3,62 +3,32 @@ import type { Project } from '../types';
 export const projects: Project[] = [
     {
         id: '1',
-        title: 'E-Commerce Platform',
-        description: 'A full-featured online store with cart functionality, user authentication, and payment processing integration.',
-        image: 'https://via.placeholder.com/600x400/1e293b/6366f1?text=E-Commerce',
-        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+        title: 'Chat-with-PDF – AI-powered Document Q&A',
+        description: 'Developed a Python-based system allowing users to query business documents and retrieve insights. Applied embeddings, semantic search, and RAG architecture thinking to deliver relevant responses. Simulated real-world knowledge management and document processing scenarios.',
+        image: '/images/projects/chat-pdf.png',
+        tags: ['Python', 'AI', 'ML', 'RAG', 'NLP', 'Document Processing'],
         category: 'Web',
         demoUrl: '#',
-        githubUrl: '#'
+        githubUrl: 'https://github.com'
     },
     {
         id: '2',
-        title: 'Task Management App',
-        description: 'Productivity tool for teams to organize tasks, set deadlines, and track progress with real-time updates.',
-        image: 'https://via.placeholder.com/600x400/1e293b/06b6d4?text=Task+App',
-        tags: ['TypeScript', 'Firebase', 'Tailwind', 'React'],
+        title: 'Sentiment Analysis Tool – Business Insights Model',
+        description: 'Built an ML pipeline for customer review classification (positive/neutral/negative). Preprocessed text, implemented TF-IDF vectorization, and generated actionable insights. Demonstrated analytical thinking and application of machine learning in decision support.',
+        image: '/images/projects/sentiment-analysis.png',
+        tags: ['Python', 'ML', 'NLP', 'TF-IDF', 'Scikit-learn', 'Data Analysis'],
         category: 'Web',
         demoUrl: '#',
-        githubUrl: '#'
+        githubUrl: 'https://github.com'
     },
     {
         id: '3',
-        title: 'Portfolio Design',
-        description: 'Modern portfolio website template with smooth animations and responsive design for creative professionals.',
-        image: 'https://via.placeholder.com/600x400/1e293b/ef4444?text=Portfolio',
-        tags: ['React', 'Framer Motion', 'CSS Modules'],
-        category: 'Design',
-        demoUrl: '#',
-        githubUrl: '#'
-    },
-    {
-        id: '4',
-        title: 'Fitness Tracker Mobile App',
-        description: 'Mobile application to track workouts, monitor progress, and set fitness goals with social sharing features.',
-        image: 'https://via.placeholder.com/600x400/1e293b/10b981?text=Fitness+App',
-        tags: ['React Native', 'Redux', 'API Integration'],
-        category: 'Mobile',
-        demoUrl: '#',
-        githubUrl: '#'
-    },
-    {
-        id: '5',
-        title: 'Financial Dashboard',
-        description: 'Data visualization dashboard for financial analytics with interactive charts and real-time data updates.',
-        image: 'https://via.placeholder.com/600x400/1e293b/f59e0b?text=Dashboard',
-        tags: ['Vue.js', 'D3.js', 'Firebase'],
+        title: 'AI-based Chatbot – Conversational Web App',
+        description: 'Designed and deployed a chatbot using React.JS and APIs, enabling dynamic user interaction. Implemented reusable components and state management for scalability and maintainability. Showcased adaptability to emerging web technologies and collaborative development practices.',
+        image: '/images/projects/ai-chatbot.png',
+        tags: ['React', 'JavaScript', 'APIs', 'AI', 'Web Development'],
         category: 'Web',
         demoUrl: '#',
-        githubUrl: '#'
-    },
-    {
-        id: '6',
-        title: 'Brand Identity Design',
-        description: 'Complete brand identity package including logo design, color palette, typography, and brand guidelines.',
-        image: 'https://via.placeholder.com/600x400/1e293b/ec4899?text=Branding',
-        tags: ['Illustrator', 'Photoshop', 'Figma'],
-        category: 'Design',
-        demoUrl: '#',
-        githubUrl: '#'
+        githubUrl: 'https://github.com'
     }
 ];

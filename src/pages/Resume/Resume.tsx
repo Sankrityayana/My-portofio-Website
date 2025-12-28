@@ -43,24 +43,23 @@ const Resume = () => {
                 <Card glass style={{ padding: '3rem' }}>
                     <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '2rem', marginBottom: '2rem' }}>
                         <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Suraj Laxman Shanbhag</h2>
-                        <p style={{ color: 'var(--primary-500)', fontSize: '1.25rem', fontWeight: '500' }}>Full Stack Developer</p>
+                        <p style={{ color: 'var(--primary-500)', fontSize: '1.25rem', fontWeight: '500' }}>Aspiring Software Engineer</p>
                         <p style={{ color: 'var(--text-secondary)', marginTop: '1rem', lineHeight: '1.6' }}>
-                            Passionate developer with 5+ years of experience in building scalable web applications.
-                            Expert in React, TypeScript, and Node.js.
+                            Aspiring Software Engineer with strong foundations in programming, data structures, and problem-solving. Skilled in Java, Python, SQL, and web technologies with hands-on experience in AI, machine learning, and full-stack development. Proven ability to develop, collaborate, and deliver scalable, business-oriented solutions.
                         </p>
                     </div>
 
                     <div style={{ marginBottom: '2rem' }}>
                         <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                            <FaBriefcase style={{ color: 'var(--accent-500)' }} /> Experience
+                            <FaBriefcase style={{ color: 'var(--accent-500)' }} /> Leadership
                         </h3>
-                        {/* Resume content can be duplicated from Timeline or simplified */}
                         <div style={{ marginBottom: '1.5rem' }}>
-                            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>Senior Developer</h4>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>TechCorp Inc. | 2021 - Present</p>
+                            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>NSS Unit Leader</h4>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Presidency University | Present</p>
                             <ul style={{ paddingLeft: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                                <li>Led development of core product features using React and Node.js.</li>
-                                <li>Mentored junior developers and improved code quality standards.</li>
+                                <li>Coordinated campus-wide initiatives, leading cross-functional student teams for social projects.</li>
+                                <li>Enhanced collaboration, adaptability, and communication while managing outreach programs.</li>
+                                <li>Recognized for ownership, teamwork, and leadership skills in diverse environments.</li>
                             </ul>
                         </div>
                     </div>
@@ -70,8 +69,9 @@ const Resume = () => {
                             <FaGraduationCap style={{ color: 'var(--accent-500)' }} /> Education
                         </h3>
                         <div>
-                            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>BS in Computer Science</h4>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>University of Technology | 2017 - 2021</p>
+                            <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>B.Tech in Computer Science and Technology</h4>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Presidency University, Bangalore | 2022 – Present</p>
+                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '0.5rem' }}>CGPA: 7.55</p>
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@ const Resume = () => {
                             <FaCode style={{ color: 'var(--accent-500)' }} /> Key Skills
                         </h3>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                            {['React', 'TypeScript', 'Node.js', 'Next.js', 'GraphQL', 'Docker', 'AWS'].map(skill => (
+                            {['Java', 'Python', 'JavaScript', 'HTML', 'CSS', 'PHP', 'React', 'MySQL', 'SQL', 'NumPy', 'Pandas', 'Scikit-learn', 'Git', 'GitHub', 'VS Code'].map(skill => (
                                 <span key={skill} style={{
                                     background: 'var(--bg-body)',
                                     padding: '0.25rem 0.75rem',

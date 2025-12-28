@@ -3,7 +3,6 @@ import Button from '../../../components/UI/Button';
 import SectionTitle from '../../../components/UI/SectionTitle';
 import Card from '../../../components/UI/Card';
 import { fadeIn } from '../../../utils/animations';
-import { FaUserCircle } from 'react-icons/fa';
 
 const AboutSection = () => {
     return (
@@ -26,23 +25,8 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                 >
                     <Card glass hoverable style={{ padding: '0', overflow: 'hidden', aspectRatio: '1/1', maxWidth: '400px', margin: '0 auto' }}>
-                        <div style={{
-                            width: '100%',
-                            height: '100%',
-                            background: 'linear-gradient(45deg, var(--primary-600), var(--accent-600))',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            color: 'white',
-                            fontSize: '2rem',
-                            fontWeight: 'bold',
-                            flexDirection: 'column',
-                            gap: '1rem'
-                        }}>
-                            <FaUserCircle size={100} />
-                            <span style={{ fontSize: '1.2rem', opacity: 0.9 }}>Suraj Shanbhag</span>
-                        </div>
-                        {/* Replace with actual image: <img src="/images/profile.jpg" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> */}
+                        <img src="/images/profile.jpg" alt="Suraj Laxman Shanbhag" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        {/* If you don't have a profile photo yet, the placeholder will show */}
                     </Card>
                 </motion.div>
 
@@ -53,27 +37,27 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                 >
                     <h3 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>
-                        Passionate about creating modern web solutions
+                        Aspiring Software Engineer with a passion for innovation
                     </h3>
                     <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                        I am a dedicated developer with a strong passion for building web applications that are not only functional but also visually appealing and user-friendly. With years of experience in full-stack development, I enjoy solving complex problems and turning ideas into reality.
+                        I am an aspiring software engineer with strong foundations in programming, data structures, and problem-solving. Skilled in Java, Python, SQL, and web technologies with hands-on experience in AI, machine learning, and full-stack development.
                     </p>
                     <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.1rem' }}>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.
+                        I have a proven ability to develop, collaborate, and deliver scalable, business-oriented solutions. Recognized for teaching, leadership, adaptability, and initiative through academic and extracurricular roles.
                     </p>
 
                     <div style={{ display: 'flex', gap: '2rem' }}>
                         <div>
+                            <h4 className="text-gradient" style={{ fontSize: '2rem', fontWeight: '800' }}>Final Year</h4>
+                            <p style={{ color: 'var(--text-muted)' }}>B.Tech Student</p>
+                        </div>
+                        <div>
                             <h4 className="text-gradient" style={{ fontSize: '2rem', fontWeight: '800' }}>3+</h4>
-                            <p style={{ color: 'var(--text-muted)' }}>Years Experience</p>
+                            <p style={{ color: 'var(--text-muted)' }}>Key Projects</p>
                         </div>
                         <div>
-                            <h4 className="text-gradient" style={{ fontSize: '2rem', fontWeight: '800' }}>50+</h4>
-                            <p style={{ color: 'var(--text-muted)' }}>Projects Completed</p>
-                        </div>
-                        <div>
-                            <h4 className="text-gradient" style={{ fontSize: '2rem', fontWeight: '800' }}>20+</h4>
-                            <p style={{ color: 'var(--text-muted)' }}>Happy Clients</p>
+                            <h4 className="text-gradient" style={{ fontSize: '2rem', fontWeight: '800' }}>NSS</h4>
+                            <p style={{ color: 'var(--text-muted)' }}>Unit Leader</p>
                         </div>
                     </div>
 

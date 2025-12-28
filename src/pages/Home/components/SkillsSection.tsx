@@ -2,18 +2,34 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../../../components/UI/SectionTitle';
 import Card from '../../../components/UI/Card';
 import { fadeIn, staggerContainer } from '../../../utils/animations';
-import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiTailwindcss } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaPython, FaDatabase, FaCode } from 'react-icons/fa';
+import { SiJavascript, SiPhp, SiMysql, SiNumpy, SiPandas, SiScikitlearn, SiGithub } from 'react-icons/si';
 
 const skills = [
-    { name: 'React', icon: <FaReact size={40} color="#61DAFB" /> },
-    { name: 'TypeScript', icon: <SiTypescript size={40} color="#3178C6" /> },
+    // Programming
+    { name: 'Java', icon: <FaJava size={40} color="#007396" /> },
+    { name: 'Python', icon: <FaPython size={40} color="#3776AB" /> },
     { name: 'JavaScript', icon: <SiJavascript size={40} color="#F7DF1E" /> },
+
+    // Data Science & ML
+    { name: 'NumPy', icon: <SiNumpy size={40} color="#013243" /> },
+    { name: 'Pandas', icon: <SiPandas size={40} color="#150458" /> },
+    { name: 'Scikit-learn', icon: <SiScikitlearn size={40} color="#F7931E" /> },
+
+    // Web Development
+    { name: 'React', icon: <FaReact size={40} color="#61DAFB" /> },
     { name: 'HTML5', icon: <FaHtml5 size={40} color="#E34F26" /> },
     { name: 'CSS3', icon: <FaCss3Alt size={40} color="#1572B6" /> },
-    { name: 'Tailwind', icon: <SiTailwindcss size={40} color="#06B6D4" /> },
-    { name: 'Node.js', icon: <FaNodeJs size={40} color="#339933" /> },
+    { name: 'PHP', icon: <SiPhp size={40} color="#777BB4" /> },
+
+    // Databases
+    { name: 'MySQL', icon: <SiMysql size={40} color="#4479A1" /> },
+    { name: 'SQL', icon: <FaDatabase size={40} color="#336791" /> },
+
+    // Tools
     { name: 'Git', icon: <FaGitAlt size={40} color="#F05032" /> },
+    { name: 'GitHub', icon: <SiGithub size={40} color="#181717" /> },
+    { name: 'VS Code', icon: <FaCode size={40} color="#007ACC" /> },
 ];
 
 const SkillsSection = () => {

@@ -7,38 +7,27 @@ import { fadeIn, staggerContainer } from '../../../utils/animations';
 const experiences: Experience[] = [
     {
         id: '1',
-        role: 'Senior Frontend Developer',
-        company: 'Tech Innovations Inc.',
-        period: '2022 - Present',
+        role: 'NSS Unit Leader',
+        company: 'Presidency University',
+        period: 'Present',
         type: 'Work',
         description: [
-            'Led the frontend team in rebuilding the legacy application using React and TypeScript.',
-            'Improved site performance by 40% through code splitting and optimization techniques.',
-            'Mentored junior developers and established code quality standards.'
+            'Coordinated campus-wide initiatives, leading cross-functional student teams for social projects.',
+            'Enhanced collaboration, adaptability, and communication while managing outreach programs.',
+            'Recognized for ownership, teamwork, and leadership skills in diverse environments.'
         ]
     },
     {
         id: '2',
-        role: 'Full Stack Developer',
-        company: 'Creative Solutions Agency',
-        period: '2020 - 2022',
-        type: 'Work',
-        description: [
-            'Developed custom e-commerce solutions for various clients using MERN stack.',
-            'Integrated payment gateways and third-party APIs.',
-            'Collaborated of designers and managers to deliver projects on time.'
-        ]
-    },
-    {
-        id: '3',
-        role: 'Computer Science Degree',
-        company: 'University of Technology',
-        period: '2016 - 2020',
+        role: 'B.Tech in Computer Science and Technology',
+        company: 'Presidency University, Bangalore',
+        period: '2022 - Present',
         type: 'Education',
         description: [
-            'Specialized in Software Engineering and Artificial Intelligence.',
-            'Graduated with Honors.',
-            'Built a campus navigation app as a final year project.'
+            'CGPA: 7.55',
+            'Strong foundations in programming, data structures, and problem-solving.',
+            'Hands-on experience in AI, machine learning, and full-stack development.',
+            'Developed key projects: Chat-with-PDF, Sentiment Analysis Tool, and AI-based Chatbot.'
         ]
     }
 ];
